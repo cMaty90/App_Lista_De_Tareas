@@ -1,0 +1,56 @@
+body{
+ background-color: #51C8C4;
+}
+
+h2{
+ font-family: 'Fredoka One', cursive;
+}
+h5{
+ font-family: 'Fredoka One', cursive;
+}
+
+.reportes article{
+ border: 2px solid black;
+ border-radius: 5px;
+ background-color: #DBD3E5;
+}
+
+.reportes article p{
+ display: flex;
+ justify-content: center;
+}
+
+section input{
+ border-radius: 5px;
+}
+
+.articulo-tarea{
+ border: 3px solid black;
+ border-radius: 5px;
+ margin: 5px 5px;
+}
+
+.btn-eliminar-tarea{
+ margin-left: 40px;
+ margin-bottom: 10px;
+ background-color:silver;
+}
+
+.tildar-checkbox-tarea{
+ margin-left: 15px;
+ width: 17px;
+ height: 18px;
+}
+
+.descripcion{
+ height: 50px;
+ border-radius: 5px;
+ border: 2px solid black;
+}
+
+.fecha-actual{
+ margin-left: 15px;
+ color:linen;
+}
+
+
