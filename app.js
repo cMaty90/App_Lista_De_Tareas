@@ -63,10 +63,13 @@ const checkBoxTareaRealizada = () => {
  checkboxRealizada.type = `${'checkbox'}`;
  checkboxRealizada.className = `${'tildar-checkbox-tarea'}`;
 
- checkboxRealizada.addEventListener('click', () => {
- contadorRealizadas++
- realizadas.textContent = `${contadorRealizadas}`; //terminadas
- })
+ function contarCheckBox() {
+  contadorRealizadas++
+  realizadas.textContent = `${contadorRealizadas}`; //terminadas
+  checkboxRealizada.removeEventListener('click', contarCheckBox);
+ }
+
+ checkboxRealizada.addEventListener('click', contarCheckBox);
 
  return checkboxRealizada
 }
